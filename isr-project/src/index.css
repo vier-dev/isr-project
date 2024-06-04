@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Noto-sans", "Nunito";
+  overflow-x: hidden;
+}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--light-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--light-color);
+}
+
+:root{
+  --light-color: #FFFFFF;
+  --font-color: #0A4AB9;
+  --font-black-color: #222222;
+  --btn-color: #009FE8;
+
+  --span-color: #FA020E;
+  --span-color-blue: #009FE8;
+}
+
+.container-isr{
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
+.btn{
+  font-size: 16px;
+  background: var(--btn-color);
+  color: var(--light-color);
+  border-radius: 8px;
+  padding: 5px 15px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1700px) {
+  .container-isr{
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .container-isr{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}

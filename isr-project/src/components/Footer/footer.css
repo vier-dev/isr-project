@@ -1,0 +1,36 @@
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 82px;
+    background: transparent linear-gradient(90deg, #00034A 0%, #004198 100%);
+    color: var(--light-color);
+    padding: 0 8%;
+}
+
+.footer p{
+    display: inline-block;
+    font-family: "Nunito";
+    font-weight: 200;
+}
+
+.footer ul li{
+    display: inline-block;
+    font-family: "Nunito";
+    font-weight: 200;
+    margin-right: 25px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1700px) {
+    .footer{
+        padding: 0 5%;
+    }
+}
+
+@media screen and  (max-width: 768px) {
+    .footer ul li{
+        display: block;
+    }
+}

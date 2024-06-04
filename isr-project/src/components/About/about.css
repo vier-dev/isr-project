@@ -1,0 +1,38 @@
+.about{
+    width: 100%;
+    background: transparent linear-gradient(137deg, #0A4AB9 0%, #009FE8 100%);
+}
+
+h2{
+    padding: 50px 0;
+    text-align: center;
+    font: 600 36px/42px "Nunito";
+    color: var(--light-color);
+}
+
+.container-isr{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left .right{
+    margin: auto;
+}
+
+
+@media screen and (max-width: 1366px) {
+    h2{
+        margin-bottom: 5%;
+    }
+
+    .left{
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container-isr{
+        display: block;
+    }
+}

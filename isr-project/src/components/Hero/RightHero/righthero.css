@@ -1,0 +1,251 @@
+.menu{
+    display: none;
+}
+
+.right-hero{
+    position: absolute;
+    top: 116px;
+    left: 1106px;
+    width: 586px;
+    height: 844px;
+    padding: 20px;
+    background: var(--light-color);
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 28px;
+}
+
+.right-hero p{
+    font-size: 20px;
+    font-weight: 800;
+    font-family: "Nunito";
+    margin-bottom: 0;
+}
+
+.right-hero span{
+    font-size: 16px;
+    font-family: "Nunito";
+}
+
+.right-hero form{
+    margin-top: 5px;
+}
+
+.right-hero form .input-box{
+    width: 100%;
+    text-align: left;
+}
+
+.right-hero form .input-box label{
+    font-size: 16px;
+    font-family: "Nunito";
+    display: flex;
+    align-items: center;
+}
+
+.right-hero form .input-box input{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background: var(--light-color);
+    border: 1px solid #D5D5D5;
+    border-radius: 10px;
+    margin: 5px 0 10px;
+    padding: 18px;
+}
+
+.right-hero form .input-box span{
+    font-family: "Nunito";
+    font-size: 10px;
+    background: var(--span-color);
+    color: var(--light-color);
+    margin: 5px;
+    padding: 3px;
+}
+
+.right-hero form .column{
+    display: flex;
+    column-gap: 15px;
+}
+
+.dropdown{
+    box-sizing: border-box;
+}
+
+.select{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 38px;
+    width: 100%;
+    background: var(--light-color);
+    border: 1px solid #D5D5D5;
+    border-radius: 10px;
+    margin: 0 0 10px;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.caret{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 11px solid #222222;
+}
+
+.right-hero form .input-box .span-select{
+    font-size: 10px;
+    background: var(--span-color-blue);
+    color: var(--light-color);
+    margin: 3px 20px 3px 5px;
+    padding: 3px;
+}
+
+.right-hero form .input-box .span-select option{
+    padding: 3px;
+}
+
+form .input-box textarea{
+    position: relative;
+    width: 100%;
+    border: 1px solid #D5D5D5;
+    border-radius: 10px;
+    margin: 0 0 10px;
+    padding: 15px;
+    resize: none;
+}
+
+.right-hero form .checkbox-content p{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    font-family: "Nunito";
+}
+
+.right-hero .checkbox-content span{
+    font-size: 10px;
+    background: var(--span-color);
+    color: var(--light-color);
+    margin: 10px;
+    padding: 3px;
+}
+
+.right-hero .checkbox{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.right-hero button{
+    margin-top: 35px;
+}
+
+
+@media screen and (max-width: 1700px) {
+    .right-hero{
+        left: 996px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .right-hero{
+        left: 830px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .right-hero{
+        left: 790px;
+        width: 496px;
+    }
+
+    .right-hero p{
+        font-size: 20px;
+    }
+        
+    .right-hero span{
+        font-size: 14px;
+    }
+
+    .right-hero form .checkbox-content p{
+        font-size: 14px;
+    }
+
+    .right-hero .checkbox{
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .right-hero{
+        left: 636px;
+        width: 496px;
+        height: 804px;
+    }
+
+    .right-hero form .input-box label{
+        font-size: 14px;
+    }
+
+    .right-hero form .input-box input{
+        border-radius: 10px;
+        padding: 16px;
+    }
+
+    .right-hero form .input-box .span-select option{
+        padding: 3px;
+    }
+
+    .right-hero form .checkbox-content p{
+        font-size: 15px;
+    }
+
+    .right-hero .checkbox{
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu{
+        position: absolute;
+        margin-top: 40px;
+        right: 30px;
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: var(--span-color-blue);
+        color: var(--light-color);
+        border: none;
+        border-radius: 5px;
+        display: block;
+        z-index: 1;
+    }
+
+    .right-hero{
+        left: 90px;
+        width: 586px;
+        display: none;
+    }
+
+    .right-hero.visible {
+        display: block;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 0;
+    }
+}

@@ -1,0 +1,184 @@
+.cards{
+    display: grid;
+    gap: 24px;
+    grid-template-columns: auto auto;
+}
+
+.card{
+    max-width: 390px !important;
+    max-height: 220px !important;
+    font-family: "Nunito";
+    cursor: pointer;
+    text-align: justify;
+    pointer-events: none;
+}
+
+.card .icon{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.card .icon img{
+    width: 80px;
+}
+
+.card .icon h5{
+    margin: 10px 10px 0 10px;
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--font-color);
+}
+
+.card .card-body p{
+    font-size: 16px;
+}
+
+.right-footer{
+    color: var(--light-color);
+    max-width: 710px;
+    margin: 30px 0 0 50px;
+    padding: 20px;
+}
+
+.right-footer h3{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+.right-footer p{
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1700px) {
+    .card{
+        width: auto;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .card{
+        width: auto;
+        height: auto;
+    }
+    .card .icon img{
+        width: 70px;
+        margin-right: 10px;
+    }
+
+    .card .icon h5{
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .card .card-body p{
+        font-size: 14px;
+    }
+    .right-footer{
+        width: 650px;
+        margin: 30px 0 0 30px;
+        padding: 20px;
+    }
+}
+
+
+@media screen and (max-width: 1366px) {
+    .cards{
+        margin-bottom: 11%;
+    }
+
+    .card{
+        width: auto;
+        height: auto;
+    }
+
+    .card .icon img{
+        width: 60px;
+    }
+    
+    .card .icon h5{
+        font-size: 18px;
+    }
+    
+    .card .card-body p{
+        font-size: 14px;
+    }
+    
+    .right-footer{
+        width: 670px;
+        margin-bottom: 10%;
+        margin-right: 40px;
+        margin-left: 40px;
+        padding: 5px 15px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .right-content{
+        margin: auto;
+    }
+
+    .card{
+        width: auto;
+        height: 200px;
+    }
+
+    .card .icon img{
+        width: 60px;
+    }
+    
+    .card .icon h5{
+        font-size: 18px;
+    }
+    
+    .card .card-body p{
+        font-size: 14px;
+    }
+    
+    .right-footer{
+        max-width: 625px;
+    }
+    .right-footer h3{
+        font-size: 20px;
+    }
+    .right-footer p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cards{
+        display: grid;
+        gap: 14px;
+        grid-template-columns: auto auto;
+        margin: 50px 5%;
+    }
+    
+    .card{
+        max-width: 340px !important;
+        max-height: 220px !important;
+    }
+
+    .card .icon img{
+        width: 70px;
+        margin-right: 10px;
+    }
+    
+    .card .icon h5{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    
+    .card .card-body p{
+        margin-top: -5%;
+        font-size: 12px;
+    }
+    
+    .right-footer{
+        width: 610px;
+        margin: 0 5%;
+    }
+
+}
