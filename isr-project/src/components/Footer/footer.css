@@ -29,8 +29,10 @@
     }
 }
 
-@media screen and  (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .footer ul li{
         display: block;
+        font-size: 12px;
+        margin-right: 10px auto;
     }
 }

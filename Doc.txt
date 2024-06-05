@@ -9,4 +9,4 @@ React's component-based design is one of its most notable characteristics. This 
 
 In conclusion, React is an excellent choice for developing simple projects because of my comfort and familiarity with the framework, its component-based architecture, the performance benefits of the virtual DOM, the strong community and ecosystem, one-way data binding, and the availability of React developer tools. These capabilities work together to provide a more efficient, maintainable, and high-performance development process, making React the best framework for the project.
 
-I am convinced that by using these advantages, I will provide a high-quality application that meets and exceeds the project's needs.
+I am convinced that I will provide a high-quality application that meets and exceeds the project's needs so that's why I choose react for this sample project.

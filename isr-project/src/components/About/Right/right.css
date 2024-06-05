@@ -42,7 +42,6 @@
 }
 
 .right-footer h3{
-    font-size: 24px;
     font-weight: 600;
 }
 
@@ -51,10 +50,28 @@
     font-size: 16px;
 }
 
-@media screen and (max-width: 1700px) {
+@media screen and (max-width: 1880px) {
+    .cards{
+        gap: 22px;
+    }
     .card{
-        width: auto;
-        height: auto;
+        width: 355px;
+        height: 265px;
+    }
+    .right-footer{
+        max-width: 710px;
+        margin: 30px 0 0 auto;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    .cards{
+        gap: 18px;
+    }
+    .card{
+        width: 375px;
+        height: 250px;
     }
 }
 
@@ -163,7 +180,7 @@
 
     .card .icon img{
         width: 70px;
-        margin-right: 10px;
+        margin-right: 0;
     }
     
     .card .icon h5{
