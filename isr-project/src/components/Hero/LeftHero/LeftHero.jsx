@@ -1,6 +1,6 @@
 import React from 'react'
 import './lefthero.css'
-import certificate from "../../../assets/300×250.png";
+import certificate from "../../../assets/hero-cert.png";
 import hero from "../../../assets/female-thinking.png";
 
 const LeftHero = () => {
