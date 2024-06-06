@@ -25,14 +25,16 @@
 
 @media screen and (max-width: 1700px) {
     .footer{
-        padding: 0 5%;
+        padding: 0 3%;
     }
 }
 
 @media screen and (max-width: 768px) {
+    .footer ul{
+        margin: auto;
+    }
     .footer ul li{
         display: block;
         font-size: 12px;
-        margin-right: 10px auto;
     }
 }

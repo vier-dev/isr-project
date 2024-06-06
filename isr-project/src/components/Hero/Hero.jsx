@@ -15,6 +15,18 @@ const Hero = () => {
 
       <main className="container-isr">
         <section className="left">
+          <div className="left-context">
+            <h1>
+                多様な働き方に合わせたクラウド認証も、<br />
+                社内システムのログイン統合も、 <br />
+                これひとつで。
+            </h1>
+            <p>
+              ゼロトラストモデルを採用したCloudGate MUROは快適で <br />
+              よりセキュアなクラウド利用を可能にします。
+            </p>
+          </div>
+            
           <LeftHero />
         </section>
 

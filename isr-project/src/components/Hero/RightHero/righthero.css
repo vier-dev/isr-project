@@ -4,9 +4,9 @@
 
 .right-hero{
     position: absolute;
-    top: 116px;
+    top: 76px;
     left: 1106px;
-    width: 586px;
+    width: 536px;
     height: 844px;
     padding: 20px;
     background: var(--light-color);
@@ -44,7 +44,7 @@
 
 .right-hero form .input-box input{
     position: relative;
-    height: 10px;
+    height: 30px;
     width: 100%;
     background: var(--light-color);
     border: 1px solid #D5D5D5;
@@ -161,21 +161,64 @@ input[type="checkbox"] {
 }
 
 @media screen and (max-width: 1366px) {
-    .right-hero{
-        left: 790px;
-        width: 496px;
+    .menu{
+        position: absolute;
+        top: 60px;
+        right: 150px;
+        padding: 20px;
+        cursor: pointer;
+        background-color: var(--span-color-blue);
+        color: var(--light-color);
+        border: none;
+        border-radius: 5px;
+        display: block;
+        z-index: 1;
     }
 
-    .right-hero p{
-        font-size: 20px;
+    .right-hero{
+        left: 390px;
+        width: 586px;
+        display: none;
     }
-        
-    .right-hero span{
+
+    .right-hero.visible {
+        display: block;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 0;
+    }
+}
+
+@media screen and (max-width: 1270px) {
+    
+    .right-hero{
+        left: 366px;
+        width: 550px;
+        height: 804px;
+    }
+
+    .right-hero form .input-box label{
         font-size: 14px;
+    }
+
+    .right-hero form .input-box input{
+        border-radius: 10px;
+        padding: 16px;
+    }
+
+    .right-hero form .input-box .span-select option{
+        padding: 3px;
     }
 
     .right-hero form .checkbox-content p{
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .right-hero .checkbox{
@@ -183,10 +226,15 @@ input[type="checkbox"] {
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
+    .menu{
+        top: 65px;
+        right: 70px;
+    }
+    
     .right-hero{
-        left: 636px;
-        width: 496px;
+        left: 236px;
+        width: 550px;
         height: 804px;
     }
 
@@ -215,8 +263,8 @@ input[type="checkbox"] {
 @media screen and (max-width: 768px) {
     .menu{
         position: absolute;
-        margin-top: 40px;
-        right: 30px;
+        top: 65px;
+        right: 70px;
         display: inline-block;
         padding: 10px 20px;
         font-size: 16px;
@@ -230,7 +278,8 @@ input[type="checkbox"] {
     }
 
     .right-hero{
-        left: 90px;
+        top: 150px;
+        left: 70px;
         width: 586px;
         display: none;
     }

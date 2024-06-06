@@ -4,8 +4,8 @@ import photo1 from "../../../assets/cloudgateuno-sso.png";
 
 const Left = () => {
   return (
-    <div>
-        <div className="left-content">
+    <div className='left-content'>
+        <div className="">
           <img src={photo1} alt="" />
         </div>
         <div className="left-footer">

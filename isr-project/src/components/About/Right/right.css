@@ -5,12 +5,11 @@
 }
 
 .card{
-    max-width: 390px !important;
+    max-width: 336px !important;
     max-height: 220px !important;
     font-family: "Nunito";
     cursor: pointer;
     text-align: justify;
-    pointer-events: none;
 }
 
 .card .icon{
@@ -24,7 +23,7 @@
 }
 
 .card .icon h5{
-    margin: 10px 10px 0 10px;
+    margin: 0 10px;
     font-size: 20px;
     font-weight: 800;
     color: var(--font-color);
@@ -36,9 +35,8 @@
 
 .right-footer{
     color: var(--light-color);
-    max-width: 710px;
-    margin: 30px 0 0 50px;
-    padding: 20px;
+    max-width: 610px;
+    margin: 30px;
 }
 
 .right-footer h3{
@@ -48,31 +46,10 @@
 
 .right-footer p{
     font-size: 16px;
-}
-
-@media screen and (max-width: 1880px) {
-    .cards{
-        gap: 22px;
-    }
-    .card{
-        width: 355px;
-        height: 265px;
-    }
-    .right-footer{
-        max-width: 710px;
-        margin: 30px 0 0 auto;
-        padding: 20px;
-    }
-}
-
-@media screen and (max-width: 1700px) {
-    .cards{
-        gap: 18px;
-    }
-    .card{
-        width: 375px;
-        height: 250px;
-    }
+    top: 1677px;
+    left: 999px;
+    width: 610px;
+    height: 157px;
 }
 
 @media screen and (max-width: 1500px) {
@@ -86,7 +63,7 @@
     }
 
     .card .icon h5{
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 600;
     }
 
@@ -100,19 +77,78 @@
     }
 }
 
-
 @media screen and (max-width: 1366px) {
-    .cards{
-        margin-bottom: 11%;
+    
+    .right-footer{
+        width: auto;
+        margin-left: -10px;
+        padding: 25px;
     }
 
+}
+
+@media screen and (max-width: 1270px) {
+    .right-content{
+        display: flex;
+        align-items: center;
+        margin: 25px 0;
+        text-align: center;
+    }
+    .cards{
+        display: grid;
+        gap: 14px;
+        grid-template-columns: auto auto;
+    }
+    
+    .card{
+        width: auto;
+        height: auto;
+    }
+
+    .card .icon{
+        display: block;
+        text-align: center;
+    }
+
+    .card .icon img{
+        width: 50px;
+        margin-bottom: -8px;
+    }
+    
+    .card .icon h5{
+        font-size: 18px;
+    }
+    
+    .card .card-body p{
+        font-size: 12px;
+    }
+
+    .right-footer{
+        width: auto;
+        padding: 30px;
+    }
+    
+}
+
+@media screen and (max-width: 1024px) {
+    .right-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cards{
+        display: grid;
+        gap: 14px;
+        grid-template-columns: auto auto;
+    }
+    
     .card{
         width: auto;
         height: auto;
     }
 
     .card .icon img{
-        width: 60px;
+        width: 70px;
     }
     
     .card .icon h5{
@@ -124,78 +160,32 @@
     }
     
     .right-footer{
-        width: 670px;
-        margin-bottom: 10%;
-        margin-right: 40px;
-        margin-left: 40px;
-        padding: 5px 15px;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    .right-content{
-        margin: auto;
-    }
-
-    .card{
         width: auto;
-        height: 200px;
-    }
-
-    .card .icon img{
-        width: 60px;
+        margin: 10px 0;
     }
     
-    .card .icon h5{
-        font-size: 18px;
-    }
-    
-    .card .card-body p{
-        font-size: 14px;
-    }
-    
-    .right-footer{
-        max-width: 625px;
-    }
-    .right-footer h3{
-        font-size: 20px;
-    }
-    .right-footer p{
-        font-size: 14px;
-    }
 }
 
 @media screen and (max-width: 768px) {
-    .cards{
-        display: grid;
-        gap: 14px;
-        grid-template-columns: auto auto;
-        margin: 50px 5%;
-    }
-    
-    .card{
-        max-width: 340px !important;
-        max-height: 220px !important;
+    .right-content{
+        display: block;
     }
 
     .card .icon img{
-        width: 70px;
-        margin-right: 0;
+        width: 60px;
     }
     
     .card .icon h5{
         font-size: 18px;
-        font-weight: 600;
     }
     
     .card .card-body p{
-        margin-top: -5%;
-        font-size: 12px;
+        font-size: 14px;
     }
     
     .right-footer{
-        width: 610px;
-        margin: 0 5%;
+        width: auto;
+        margin: 10px 0;
     }
 
 }

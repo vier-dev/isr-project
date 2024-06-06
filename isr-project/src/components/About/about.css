@@ -12,27 +12,36 @@ h2{
 
 .container-isr{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
-
-.left .right{
-    margin: auto;
-}
-
 
 @media screen and (max-width: 1366px) {
-    h2{
-        margin-bottom: 5%;
-    }
 
-    .left{
-        margin-right: auto;
+    .container-isr{
+        display: grid;
+        grid-template-columns: auto auto;
     }
 }
+
+@media screen and (max-width: 1270px) {
+    .container-isr{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container-isr{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 
 @media screen and (max-width: 768px) {
     .container-isr{
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
+
 }
